@@ -91,3 +91,7 @@
   height: 2rem;
   align-self: flex-end;
 }
+
+.icon-color{
+  color: var( --yellow);
+}

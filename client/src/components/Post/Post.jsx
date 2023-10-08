@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Post.css";
-import Comment from "../../img/comment.png";
-import Share from "../../img/share.png";
+// import Comment from "../../img/comment.png";
+// import Share from "../../img/share.png";
 import Heart from "../../img/like.png";
 import NotLike from "../../img/notlike.png";
 import { likePost } from "../../api/PostsRequests";
@@ -32,8 +32,8 @@ const Post = ({ data }) => {
           style={{ cursor: "pointer" }}
           onClick={handleLike}
         />
-        <img src={Comment} alt="" />
-        <img src={Share} alt="" />
+        {/* <img src={Comment} alt="" />
+        <img src={Share} alt="" /> */}
       </div>
 
       <span style={{ color: "var(--gray)", fontSize: "12px" }}>
