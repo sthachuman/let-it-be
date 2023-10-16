@@ -24,7 +24,7 @@ const TrendCard = () => {
        {TrendData.map((trend, id)=>{
             return(
                 <div className="trend" key={id}>
-                    <span>#{trend[0]}</span>
+                    <span>-{trend[0]}</span>
                     {/* <span>{trend.shares}k shares</span> */}
                 </div>
             )
