@@ -1,0 +1,72 @@
+.hero-container {
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .hero {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 2s;
+  }
+  
+  .hero:hover {
+    transform: scale(1.15);
+  }
+  
+  .hero-stuff {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  
+  h1 {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  p {
+    font-family: sans-serif;
+  }
+
+  /* Rate */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
+import Postdescription from "./pages/Postdescription/postdescription.jsx";
 import Auth from "./pages/Auth/Auth";
 import Profile from "./pages/Profile/Profile";
 import { useSelector } from "react-redux";
@@ -28,6 +29,10 @@ function App() {
         <Route
           path="/home"
           element={user ? <Home /> : <Navigate to="../auth" />}
+        />
+        <Route
+          path="/Postdescription"
+          element={<Postdescription />}
         />
         <Route
           path="/auth"
